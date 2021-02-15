@@ -32,6 +32,11 @@ To run the project
 1. Under terraform-project/deployment/, update the variables.json file with the URL to the docker image created earlier in ECR
 2. Update the s3 backed value to store the terraform state in main.tf under terraform-project/deployment 
 3. Run "terraform init" and "terraform apply -var-file=./variables.json" and confirm "yes"
-4. Once the infrastructure is ready, access the domain (sodhani.xyz) which will land on the static page available in the s3 bucket called via cloudfront and access the tenants (tenant1.sodhani.xyz, tenant2.sodhani.xyz and tenant3.sodhani.xyz) which will return a "Hello World!!" from the dummy application.
+
+Upoad the static web-pages to the s3 bucket
+1. Under terraform-project/upload, update the local variable for domain in main.tf
+3. Run "terraform init" and "terraform apply".
+
+Once the infrastructure is ready, access the domain (sodhani.xyz) which will land on the static page available in the s3 bucket called via cloudfront and access the tenants (tenant1.sodhani.xyz, tenant2.sodhani.xyz and tenant3.sodhani.xyz) which will return a "Hello World!!" from the dummy application.
 
 
