@@ -12,7 +12,7 @@ The AWS services mentioned to be used were
 The terraform code submitted will deploy a SaaS application in AWS where we have 2 tenants (tenant1 and tenant3) sharing an environment for the deployed application and another tenant (tenant2) having the application deployed in a separate environment  
 
 High Level Diagram
-![High Level Diagram](https://github.com/Sodhani/terraform-project/blob/master/Terraform_Project_Diagram.jpg)
+![Terraform_Project_Diagram](https://github.com/Sodhani/terraform-project/blob/main/Terraform_Project_Diagram.jpg)
 
 Multi-tenancy has been obtained, by separating the tenants based on the subdomain of the dummy web application deployed.
 The domain on which the application is deployed is "sodhani.xyz" and we have tenants separated logically as "tenant1.sodhani.xyz", "tenant2.sodhani.xyz" and "tenant3.sodhani.xyz"
